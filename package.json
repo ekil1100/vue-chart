@@ -1,8 +1,9 @@
 {
   "name": "@likelz/vue-chart",
-  "version": "1.0.0",
+  "version": "1.0.3",
   "author": "Like",
   "license": "MIT",
+  "repository": "https://github.com/lastingman/vue-chart",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
@@ -12,18 +13,18 @@
     "docs": "npm run docs:serve",
     "docs:build": "vue-cli-service docs --mode build",
     "docs:serve": "vue-cli-service docs --mode serve",
-    "prepublish": "vue-cli-service lint && vue-cli-service docs --mode build && vue-cli-service build",
+    "prepublishOnly": "vue-cli-service lint && vue-cli-service docs --mode build && vue-cli-service build",
     "start": "vue-cli-service serve"
   },
   "main": "dist/test-vue-plugin.common.js",
   "module": "dist/test-vue-plugin.esm.js",
   "unpkg": "dist/test-vue-plugin.umd.min.js",
   "files": [
+    "dist",
     "dist/test-vue-plugin.common.js",
     "dist/test-vue-plugin.umd.min.js",
     "dist/test-vue-plugin.umd.js",
-    "dist/test-vue-plugin.esm.js",
-    "src"
+    "dist/test-vue-plugin.esm.js"
   ],
   "dependencies": {
     "chart.js": "^2.8.0",
