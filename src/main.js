@@ -1,8 +1,7 @@
 import Vue from 'vue';
 import App from './App.vue';
-import vChart from './plugins/chart.js';
 
-Vue.use(vChart);
+import './plugin';
 
 Vue.config.productionTip = false;
 

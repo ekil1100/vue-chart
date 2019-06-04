@@ -1,16 +1,33 @@
 {
-  "name": "test-vue-plugin",
-  "version": "0.1.0",
-  "private": true,
+  "name": "vue-chart",
+  "version": "1.0.0",
+  "author": "Like",
+  "license": "MIT",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "prebuild": "rm -rf dist && npm run lint",
+    "demo": "vue-cli-service demo",
+    "docs": "npm run docs:serve",
+    "docs:build": "vue-cli-service docs --mode build",
+    "docs:serve": "vue-cli-service docs --mode serve",
+    "prepublish": "vue-cli-service lint && vue-cli-service docs --mode build && vue-cli-service build",
+    "start": "vue-cli-service serve"
   },
+  "main": "dist/test-vue-plugin.common.js",
+  "module": "dist/test-vue-plugin.esm.js",
+  "unpkg": "dist/test-vue-plugin.umd.min.js",
+  "files": [
+    "dist/test-vue-plugin.common.js",
+    "dist/test-vue-plugin.umd.min.js",
+    "dist/test-vue-plugin.umd.js",
+    "dist/test-vue-plugin.esm.js",
+    "src"
+  ],
   "dependencies": {
     "chart.js": "^2.8.0",
-    "core-js": "^2.6.5",
-    "vue": "^2.6.10"
+    "core-js": "^2.6.5"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.8.0",
@@ -21,15 +38,19 @@
     "eslint": "^5.16.0",
     "eslint-plugin-vue": "^5.0.0",
     "lint-staged": "^8.1.5",
-    "vue-template-compiler": "^2.6.10"
+    "vue-cli-plugin-p11n": "^0.3.0",
+    "vue-template-compiler": "^2.6.10",
+    "vue": "^2.6.10"
   },
   "gitHooks": {
     "pre-commit": "lint-staged"
   },
+  "jsdelivr": "dist/test-vue-plugin.umd.min.js",
   "lint-staged": {
     "*.{js,vue}": [
       "vue-cli-service lint",
       "git add"
     ]
-  }
+  },
+  "sideeffects": false
 }

@@ -1,9 +1,9 @@
 <template>
-  <div id="app">
+  <div class="demo">
     <v-chart
       width="400"
       height="400"
-      type="line"
+      type="bar"
       :data="data"
       :options="options"
     ></v-chart>
