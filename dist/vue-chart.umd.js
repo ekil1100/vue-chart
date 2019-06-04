@@ -1,5 +1,5 @@
 /*!
- * vue-chart v1.0.0 
+ * vue-chart v1.0.1 
  * (c) 2019 Like
  * Released under the MIT License.
  */
@@ -198,7 +198,7 @@
       undefined
     );
 
-  var version = '1.0.0';
+  var version = '1.0.1';
   var defaultOptions = {
     tagName: 'vChart'
   };
