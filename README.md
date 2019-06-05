@@ -1,6 +1,6 @@
 # vue-chart
 
-Vue plugin which import chart.js as a vue component.
+A vue plugin which import chart.js as a vue component.
 
 ## Install
 
