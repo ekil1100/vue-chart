@@ -1,35 +1,34 @@
-# test-vue-plugin
+# vue-chart
 
-## Project setup
+Vue plugin which import chart.js as a vue component.
 
-```
-npm install
-```
+## Install
 
-### Compiles and hot-reloads for development
-
-```
-npm run serve
+```bash
+npm i @likelz/vue-chart
 ```
 
-### Compiles and minifies for production
+## Usage
 
-```
-npm run build
-```
+```js
+import vChart from '@likelz/vue-chart';
 
-### Run your tests
+Vue.use(vChart);
 
-```
-npm run test
-```
-
-### Lints and fixes files
-
-```
-npm run lint
+// or with optional tag name
+Vue.use(vChart, {
+  tagName: 'MyTagName',
+});
 ```
 
-### Customize configuration
-
-See [Configuration Reference](https://cli.vuejs.org/config/).
+```js
+<v-chart
+  width="400"
+  height="400"
+  type="bar"
+  :data="data"
+  :options="options"
+  :chart.sync="chart"
+  :ctx.sync="ctx"
+/>
+```

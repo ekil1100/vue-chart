@@ -4,6 +4,7 @@
   "author": "Like",
   "license": "MIT",
   "repository": "https://github.com/lastingman/vue-chart",
+  "description": "Vue plugin which import chart.js as a vue component.",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
@@ -16,15 +17,15 @@
     "prepublishOnly": "vue-cli-service lint && vue-cli-service docs --mode build && vue-cli-service build",
     "start": "vue-cli-service serve"
   },
-  "main": "dist/test-vue-plugin.common.js",
-  "module": "dist/test-vue-plugin.esm.js",
-  "unpkg": "dist/test-vue-plugin.umd.min.js",
+  "main": "dist/vue-chart.common.js",
+  "module": "dist/vue-chart.esm.js",
+  "unpkg": "dist/vue-chart.umd.min.js",
   "files": [
     "dist",
-    "dist/test-vue-plugin.common.js",
-    "dist/test-vue-plugin.umd.min.js",
-    "dist/test-vue-plugin.umd.js",
-    "dist/test-vue-plugin.esm.js"
+    "dist/vue-chart.common.js",
+    "dist/vue-chart.umd.min.js",
+    "dist/vue-chart.umd.js",
+    "dist/vue-chart.esm.js"
   ],
   "dependencies": {
     "chart.js": "^2.8.0",
@@ -46,7 +47,7 @@
   "gitHooks": {
     "pre-commit": "lint-staged"
   },
-  "jsdelivr": "dist/test-vue-plugin.umd.min.js",
+  "jsdelivr": "dist/vue-chart.umd.min.js",
   "lint-staged": {
     "*.{js,vue}": [
       "vue-cli-service lint",
