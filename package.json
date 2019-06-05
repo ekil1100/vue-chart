@@ -5,6 +5,13 @@
   "license": "MIT",
   "repository": "https://github.com/lastingman/vue-chart",
   "description": "A vue plugin which import chart.js as a vue component.",
+  "keywords": [
+    "vue",
+    "chart",
+    "vue plugin",
+    "chartjs",
+    "component"
+  ],
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
